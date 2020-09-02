@@ -1,0 +1,60 @@
+<html>
+        <head>
+                <title>Table</title>
+
+                <style>
+                            table{
+                                width:100%;
+                                text-align: center;
+                            }
+                            td{
+                                padding: 10px;
+                                border: 1px solid grey;
+                            }
+
+                </style>
+
+        </head>
+        <body>
+                <table class="table" cellspacing >
+                            <tr>
+                                    <td>Call 1</td>
+                                    <td>Call 2</td>
+                                    <td>Call 3</td>
+                                    <td>Call 4</td>
+                            </tr>
+                            <tr>
+                                <td>Call 1</td>
+                                <td>Call 2</td>
+                                <td>Call 3</td>
+                                <td>Call 4</td>
+                           </tr>
+                            <tr>
+                                <td>Call 1</td>
+                                <td>Call 2</td>
+                                <td>Call 3</td>
+                                <td>Call 4</td>
+                            </tr>
+
+
+                </table>
+                <button class="add-row" onclick="tabRow()">Add Row</button>
+
+
+                <script>
+                            function tabRow(){
+                                var table = document.querySelector(".table");
+                                // var rowCell = document.querySelector("td");
+                                var row_table =  table.insertRow(3);
+                                // var cell_len =table.rows[0].cells.length;
+                                row_table.insertCell(0);
+                                row_table.insertCell(1);
+                                row_table.insertCell(2);
+                                row_table.insertCell(3);
+                               
+                            }
+
+                </script>
+        </body>
+
+</html>

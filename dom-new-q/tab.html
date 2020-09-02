@@ -1,0 +1,90 @@
+<html>
+            <head>
+                        <title>tabs</title>
+                        
+                        <style lang ="scss" scoped>
+                                 .tabs-btn{
+                                     color:red;
+
+                                 }   
+
+                                 .tabs-btn:nth-child(2){
+                                    color:green;
+                                 }
+                                 .tabs-btn:nth-child(3){
+                                    color: blue;
+                                 }
+                                 .tabs-btn:nth-child(4){
+                                    color:pink;
+                                 }
+                                 .tabs-contant{
+                                     display: none;
+                                    background:red;
+                                     height: 200px;
+                                     justify-content: center;
+                                     align-items: center;
+                                     font-size: 40px;
+                                     color: #ffffff;
+                                 }
+                                 .tabs-contant:nth-child(2){
+                                     background:green;
+                                 }
+                                 .tabs-contant:nth-child(3){
+                                     background:blue;
+                                 }
+                                 .tabs-contant:nth-child(4){
+                                     background:pink;
+                                 }
+
+                                 .active {
+                                     display: flex;
+                                 }
+
+
+                        </style>
+
+            </head>
+            <body>
+
+                            <div class="tabs-btn-sec">
+                                        <button class="tabs-btn" onclick = "tabsbtn(this)" title="red">Red Btn</button>
+                                        <button class="tabs-btn" onclick = "tabsbtn(this)" title="green">Green Btn</button>
+                                        <button class="tabs-btn" onclick = "tabsbtn(this)" title="blue">Blue Btn</button>
+                                        <button class="tabs-btn" onclick = "tabsbtn(this)" title="pink">Pink Btn</button>
+                            </div>
+                            <div class="tabs-contant-sec">
+                                        <div class="tabs-contant" id="red">
+                                                <h3>Red Contant</h3>     
+
+                                        </div>
+                                        <div class="tabs-contant" id="green">
+                                            <h3>Green Contant</h3>     
+
+                                        </div>
+                                        <div class="tabs-contant" id="blue">
+                                            <h3>Blue Contant</h3>     
+
+                                        </div>
+                                        <div class="tabs-contant" id="pink">
+                                             <h3>Pink Contant</h3>     
+
+                                        </div>
+                            </div>
+
+
+                    <script>
+                                function tabsbtn(btn){
+                                   var title=btn.getAttribute("title");
+                                   var tab_contant = document.querySelectorAll(".tabs-contant");
+                                //    tab_contant.style.display='none';
+                                   for(var i = 0; i < tab_contant.length; i++){
+                                    tab_contant[i].style.display='none';
+                                   }      
+                                   document.getElementById(title).style.display='block';         
+                                }    
+                    </script>        
+
+            </body>
+
+
+</html>

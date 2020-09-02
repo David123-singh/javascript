@@ -1,0 +1,45 @@
+<html>
+            <head>
+                        <title>time & date</title>
+            </head>
+            <body>
+                    <button class="day-btn" onclick="dayFun()"> Day</button>
+                    <button class="month-btn" onclick="monthFun()"> Month</button>
+                    <button class="year-btn" onclick="yearFun()"> Year</button>
+                    <p class="full-date"><span class="day"></span> <span class="month"></span> <span class="year"></span></p>
+
+                    <script>
+                              function timeFun(){
+                                        // var cureent = new time();
+                                        var current = new Date();
+                                        var hr = current.getHours();
+                                        var min = current.getMinutes();
+                                        var sec = current.getSeconds();
+                                        document.write("Current Time : "  +  hr +" : " + min + " : " +  sec);
+                                }
+                                timeFun();
+
+                                // date funtion
+                                var day = new Date();
+                                
+                                function dayFun(){
+                                            var d =  day.getDate();
+                                            document.querySelector(".day").innerText = d +" / ";
+                                }
+                                function monthFun(){
+                                            var m =  day.getMonth();
+                                            document.querySelector(".month").innerText = m + " / ";
+                                }
+                                function yearFun(){
+                                            var y =  day.getFullYear();
+                                            document.querySelector(".year").innerText = y;
+                                }
+
+
+                    </script>
+
+            </body>
+
+
+
+</html>

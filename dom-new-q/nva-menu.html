@@ -1,0 +1,68 @@
+<html>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <title>Nav Menu</title>
+                <style>
+                    .nav-menu{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px;
+                    }
+                    body{
+                        margin:0px;
+                    }
+                    .nav-link {
+                            padding: 8px 15px;
+                            font-size: 17px;
+                            font-family: sans-serif;
+                            color: #716f5b;
+                            font-weight: 500;
+                            text-decoration: none;
+                        }
+                        .active {
+                                    border: 1px solid #c7c7c7;
+                                }
+                </style>
+            </head>
+
+            <body>
+                        <nav class="nav-menu">
+                                    <div class="nav-menu-left">
+                                                <a href="#">
+
+                                                            <img src="https://happydemy.net/marketing/images/logo.svg" alt="" class="logo">
+                                                </a>
+
+                                    </div>
+                                    <div class="nav-menu-right">
+                                            <a href="#" class="nav-link active">Home</a>
+                                            <a href="#" class="nav-link">About</a>
+                                            <a href="#" class="nav-link">Blog</a>
+                                            <a href="#" class="nav-link">Contact</a>
+                                            <a href="#" class="nav-link">Login</a>
+                                            
+
+                                    </div>
+
+                        </nav>
+
+                        <script>
+                                        var btn_link = document.getElementsByClassName("nav-link");
+                                        for(var i = 0; i < btn_link.length; i++){
+                                            btn_link[i].addEventListener("click", function(){
+                                            var item =  document.getElementsByClassName("nav-link");
+                                                 for(var i = 0; i < item.length; i++){
+                                                        item[i].classList.remove("active")
+                                                 }
+                                                 this.classList.add("active");
+                                        });
+                                        }
+                                        
+                                            
+
+                        </script>
+            </body>
+
+</html>

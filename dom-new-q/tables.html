@@ -1,0 +1,74 @@
+<html>
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <title>Nav Menu</title>
+
+                <style>
+                            table{
+                                width: 100%;
+                                text-align: center;
+                            }
+                            td{
+                                padding: 10px;
+                            }
+
+                </style>
+
+            </head>
+            <body>
+                            <table class="mytable">
+                                            <tr>
+                                                        <th>S.R. NO</th>
+                                                        <th>Name</th>
+                                                        <th>Phone</th>
+                                                        <th>Age</th>
+                                                        <th>Gander</th>
+                                                        <th>Check Age</th>
+                                                        <th>Change Age</th>
+
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Devid</td>
+                                                <td>7374813995</td>
+                                                <td class="age">21</td>
+                                                <td>Mail</td>
+                                                <td><button class="check-age" onclick="check_age(this)">Age Check</button></td>
+                                                <td><button class="change-age">Change Age</button></td>
+
+                                            </tr> 
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Devid</td>
+                                                <td>7374813995</td>
+                                                <td class="age">21</td>
+                                                <td>Mail</td>
+                                                <td><button class="check-age" >Age Check</button></td>
+                                                <td><button class="change-age">Change Age</button></td>
+
+                                            </tr> 
+
+                            </table>
+
+                           <script>
+                                    function check_age(age){
+                                            var age_check = document.querySelector(".age");
+                                            //  age_check.style.cssText = "color:red; font-weigth:bold;";
+                                            // var table = document.querySelector(".mytable");
+                                            // var rows = table.rows;
+                                            age.classList.add("abc");
+                                            // for(var i = 0; i < rows.length; i++){
+                                            //     var age_check = document.querySelector(".age");
+                                            //     this.rows[i].style.color = "cyan";
+                                            // }
+                                    }
+
+                                    
+
+                           </script> 
+
+            </body>
+
+</html>

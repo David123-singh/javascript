@@ -1,0 +1,35 @@
+<html>
+        <head>
+                    <title>Iframe</title>
+
+                    <style>
+                            .iframe{
+                                width: 500px;
+                                height: 500px;
+                            }
+
+                    </style>
+
+        </head>
+        <body>
+            <iframe src="https://www.facebook.com/" class="iframe" title="fb"></iframe>
+
+            <button class="fb-btn" onclick="fbFun()">FaceBook</button>
+            <button class="google-btn" onclick="googleFun()">Google</button>        
+
+            <script>
+
+                        function fbFun(){
+                                var fb_iframe = document.querySelector(".iframe");
+                                fb_iframe.setAttribute("src", "https://www.facebook.com/");
+                        }
+                        function googleFun(){
+                                var fb_iframe = document.querySelector(".iframe");
+                                fb_iframe.setAttribute("src", "https://www.google.com/");
+                        }
+
+            </script>
+
+        </body>
+
+</html>

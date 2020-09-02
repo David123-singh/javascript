@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HappyDemmy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+                <div class="main-wapper">
+                        <div class="header">
+                                    <a href="#" class="logo-link">
+                                                <img src="logo.png" alt="logo" class="logo-img">
+                                    </a>
+                                    <a href="#" class="mobile-logo">
+                                        <img src="https://happydemy.net/marketing/images/mobile-logo.png" alt="logo" class="logo-img">
+                                    </a>
+                                    <a id="menu-show" class="menu-btn mdi mdi-menu"></a>
+                                    
+                                    <div class="menu">
+                                                
+                                                <ul class="menu-wapper">    
+                                                            <li class="menu-item"><a href="#" class="menu-link active">Home</a></li>
+                                                            <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+                                                            <li class="menu-item"><a href="#" class="menu-link">Service</a></li>
+                                                            <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+                                                            <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                                                </ul>
+
+                                    </div>
+
+                        </div>
+                        <div class="body-contant">
+
+
+
+                        </div>
+
+                </div>
+
+                <script>
+
+                            // mobile menu
+                            document.getElementById("menu-show").addEventListener("click", showMenu);
+                            function showMenu(){
+                                    var menu = document.querySelector(".menu");
+                                    var hide_menu = document.getElementById("menu-hide");
+                                    menu.classList.toggle("show");
+                                    this.classList.add("mdi-close");
+                                    this.classList.remove("mdi-menu");
+                                    
+                            };
+                           
+                            
+                            
+                            
+
+
+
+                </script>
+
+</body>
+</html>    

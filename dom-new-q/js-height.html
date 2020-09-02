@@ -1,0 +1,32 @@
+<html>
+        <head>
+                    <title>Height js</title>
+
+        </head>
+        <body>
+                        <p class="page-Height"></p>
+                        <p class="body-Height"></p>
+                       
+                        <style>
+                                p,body{margin:0; padding:0;}
+
+                 </style>
+
+
+                        <script>
+                                    function heightFun(){
+                                                var page_height = window.innerHeight;
+                                                document.querySelector(".page-Height").innerText = "Page Height : " + page_height + "px";
+
+                                                var  body =  document.querySelector("body");
+                                                var body_height = body.offsetHeight;
+                                                document.querySelector(".body-Height").innerText = "Body Height : " +  body_height + "px";
+
+                                    }
+                                    heightFun();
+                        </script>
+                        
+                                           
+        </body>
+
+</html>
